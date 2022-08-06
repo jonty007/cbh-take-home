@@ -1,4 +1,6 @@
-const { deterministicPartitionKey } = require("./dpk");
+const {
+  deterministicPartitionKey,
+} = require("./create-deterministic-partition-key");
 
 describe("deterministicPartitionKey", () => {
   it(`Given no input

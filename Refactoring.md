@@ -9,3 +9,11 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+1. Appropriate renaming of the file to [create-deterministic-partition-key.js`](create-deterministic-partition-key.js) which makes the file self-explanatory.
+2. Added base condition at the top of function to reduce the branching, improve readability, and reducing function execution time.
+3. Moved the const vars to global scope to reduce reinitailization of the vars everytime the function is called.
+4. Added maxPartitionKeylength as the optional param to the function to makes the functionality dynamic as per the key length requirement.
+5. Using const vars wherever possible to keep the vars readonly and making the function less error-prone.
+6. Created a createHash and getStrigifiedPartitionKey functions to keep the functionality segerated, making it more modular, and easy for future updates.
+7. Keeping the code branching to minimal by removing nested branching.
